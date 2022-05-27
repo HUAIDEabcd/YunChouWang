@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YC.master.cs" Inherits="YC.YC" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>云筹网</title>
+    <link href="css/Master.css?202202191524" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--头部-->
+        <div class="header">
+            <div class="header-cont grid">
+                <div class="grid-cell-1">
+                    <a href="index.aspx"><img src="img/logo.png" class="pic"/></a>
+                </div>
+                <div class="grid-cell-6">
+                    <ul class="grid nav">
+                        <li class="grid-cell-1"><a href="index.aspx">首页</a></li>
+                        <li class="grid-cell-1"><a href="Donate.aspx">爱心捐献</a></li>
+                        <li class="grid-cell-1"><a href="Successful.aspx">救助事迹</a></li>
+                        <li class="grid-cell-1"><a href="course.aspx">新手教程</a></li>
+                        <li class="grid-cell-1"><a href="Project.aspx">发起项目</a></li>
+                        <li class="grid-cell-2">
+                            <i>众筹，一项奉献‘爱’的项目！</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-cell-1">
+                    <div class="tou">
+                        <asp:Repeater ID="Repeater2" runat="server">
+                            <ItemTemplate>
+                                <%#Eval("Username").ToString() == "admin" ? "<a href='login.aspx'>登录</a> | <a href='register.aspx'>注册</a>" : "<div class='hover'><img src='"+Eval("Portrait")+"' class='face-img' /><a href='javascript:;' class='user-btn'>"+Eval("Username")+"▼</a></div>" %>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--中间内容-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--底部样式-->
+        <div class="footer">
+            <div class="auto clearfix">
+                <div class="five-superiority">
+                    <ul class="five-superiority-list clearfix">
+                        <li class="compensate_ico">
+                            <a href="#compensate">
+                                <span class="superiority-icon"></span>
+                                <span>100倍出事赔偿</span>
+                            </a>
+                        </li>
+                        <li class="retreat_ico">
+                            <a href="#refund">
+                                <span class="superiority-icon"></span>
+                                <span>快速帮您筹款</span>
+                            </a>
+                        </li>
+                        <li class="technology_ico">
+                            <a class="superiority-text" href="#afterService">
+                                <span class="superiority-icon"></span>
+                                <span>7x24小时技术支持</span>
+                            </a>
+                        </li>
+                        <li class="prepare_ico">
+                            <a href="#ico">
+                                <span class="superiority-icon"></span>
+                                <span>0元快速备案</span>
+                            </a>
+                        </li>
+                        <li class="service_ico">
+                            <a href="#secret">
+                                <span class="superiority-icon"></span>
+                                <span>1V1专席秘书</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-floor1">
+                    <div class="footer-list">
+                        <ul>
+                            <li class="flist-title">云筹项目服务</li>
+                            <li><a href="javascript:;"><strong>科技资助服务</strong></a></li>
+                            <li><a href="javascript:;"><strong>农业资助服务</strong></a></li>
+                            <li><a href="javascript:;"><strong>家庭资助服务</strong></a></li>
+                            <li><a href="javascript:;"><strong>医疗资助服务</strong></a></li>
+                            <li><a href="javascript:;"><strong>事业资助服务</strong></a></li>
+                        </ul>
+                        <ul>
+                            <li class="flist-title">云解决方案</li>
+                            <li><a href="javascript:;">金融解决方案</a></li>
+                            <li><a href="javascript:;">电商解决方案</a></li>
+                            <li><a href="javascript:;">移动解决方案</a></li>
+                            <li><a href="javascript:;">游戏解决方案</a></li>
+                            <li><a href="javascript:;">网站解决方案</a></li>
+                        </ul>
+                        <ul>
+                            <li class="flist-title">技术与支持</li>
+                            <li><a href="javascript:;" target="user/">工单系统</a></li>
+                            <li><a href="javascript:;">意见反馈</a></li>
+                            <li><a href="javascript:;">会员服务</a></li>
+                            <li><a href="javascript:;">IDC公司</a></li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                        </ul>
+                        <ul class="flist-4">
+                            <li class="flist-title">关于云筹</li>
+                            <li><a href="javascript:;">公司简介</a></li>
+                            <li><a href="javascript:;">新闻动态</a></li>
+                            <li><a href="javascript:;">加入我们</a></li>
+                            <li><a href="javascript:;">服务协议</a></li>
+                            <li><a href="javascript:;">友情链接</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right">
+                        <div class="telephone" title="服务热线">
+                            <span></span>
+                            <div class="tel-number">000-0000-0000</div>
+                        </div>
+                        <div class="official-plat">
+                            <p class="weixin">
+                                <img src="img/dilogo.png" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

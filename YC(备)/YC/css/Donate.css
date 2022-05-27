@@ -1,0 +1,41 @@
+﻿.cont{
+    width:55%;
+    height:505px;
+    margin:20px auto;
+    border:1px solid #ccc;
+    border-radius:25px;
+}
+
+.tab{
+    margin:20px auto;
+}
+
+.tab tr td{
+    width:205px;
+    line-height:40px;
+    text-align:center;
+}
+
+.shezhi {
+    display: none;
+    position:absolute;
+    top:80px;
+    right:325px;
+    border:1px solid #ccc;
+    background:#fff;
+}
+
+.shezhi li {
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align:center;
+
+}
+
+.shezhi li:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}

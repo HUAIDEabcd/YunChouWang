@@ -1,0 +1,270 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/*弹性布局*/
+.grid {
+    display: flex;
+}
+
+.grid-cell-1 {
+    flex: 1 1 0%;
+}
+
+.grid-cell-2 {
+    flex: 2 1 0%;
+}
+
+.grid-cell-3 {
+    flex: 3 1 0%;
+}
+
+.grid-cell-4 {
+    flex: 4 1 0%;
+}
+
+.grid-cell-5 {
+    flex: 5 1 0%;
+}
+
+.grid-cell-6 {
+    flex: 6 1 0%;
+}
+
+/*内容样式*/
+.header {
+    width: 100%;
+    height: 80px;
+    box-shadow: #666 5px 0px 5px;
+}
+
+.header-cont {
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.header-cont div{
+    height:80px;
+}
+
+.pic{
+    width:80px;
+    width:auto;
+}
+
+.nav li{
+    line-height:80px;
+    text-align:center;
+}
+
+.tou{
+    line-height:80px;
+}
+
+.face-img{
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    display:inline;
+    margin-top:15px;
+}
+
+.user-btn{
+    font-size:14px;
+    position:absolute;
+    padding:5px;
+}
+
+.hover{
+    width:100%;
+    height:80px;
+}
+
+
+/*底部样式*/
+.autoWidth {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 75%;
+}
+
+.auto {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 75%;
+}
+
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    line-height: 0;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clear-float {
+    clear: both
+}
+.footer {
+    background-color: #454545;
+    font-family: "Microsoft Yahei";
+    height: 350px;
+    width: 100%;
+}
+
+.footer-floor1 {
+    width: 100%;
+    padding: 36px 0 60px
+}
+
+.footer-list {
+    height: 100%;
+    float: left;
+    margin-left:150px;
+}
+
+    .footer-list ul {
+        float: left;
+        margin-right: 120px;
+    }
+
+    .footer-list .flist-4 {
+        margin-right: 0;
+    }
+
+    .footer-list li {
+        line-height: 32px;
+    }
+
+        .footer-list li a {
+            color: #b6e2f2;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+            .footer-list li a:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+
+    .footer-list .flist-title {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+.footer-right {
+    width: 300px;
+    float: right;
+    margin-right:150px;
+}
+
+.telephone {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+}
+
+
+    .telephone .tel-number {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: right;
+    }
+
+.official-plat {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+    .official-plat ul {
+        float: right;
+        margin-top: 7px;
+    }
+
+
+
+        .official-plat ul li {
+            height: 45px;
+        }
+
+        .official-plat ul a {
+            display: inline-block;
+            height: 32px;
+            width: 100%;
+            line-height: 32px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+    .official-plat .weixin img {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        left: 80PX;
+        top: 20PX;
+    }
+
+
+.five-superiority {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 20px;
+}
+
+.five-superiority-list li {
+    float: left;
+    width: 20%;
+    height: 36px;
+    text-align: center;
+}
+
+    .five-superiority-list li:first-child {
+        border-left: none;
+    }
+
+    .five-superiority-list li a {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        background: no-repeat 2% center;
+        text-indent: 2em;
+        color: #fff;
+        font-size: 16px;
+    }
+
+        .five-superiority-list li a:hover {
+            color: #bfe7f5;
+        }
+
+        .five-superiority-list li a.superiority-text {
+            text-indent: 4em;
+        }
+
+.superiority-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-image: url(../img/footer_youshi.png);
+}

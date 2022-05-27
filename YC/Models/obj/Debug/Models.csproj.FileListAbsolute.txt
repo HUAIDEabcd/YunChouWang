@@ -1,0 +1,12 @@
+D:\Pictures\YC\Models\bin\Debug\Models.dll
+D:\Pictures\YC\Models\bin\Debug\Models.pdb
+D:\Pictures\YC\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Pictures\YC\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Pictures\YC\Models\obj\Debug\Models.dll
+D:\Pictures\YC\Models\obj\Debug\Models.pdb
+D:\Desktop\YC\Models\bin\Debug\Models.dll
+D:\Desktop\YC\Models\bin\Debug\Models.pdb
+D:\Desktop\YC\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\Desktop\YC\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Desktop\YC\Models\obj\Debug\Models.dll
+D:\Desktop\YC\Models\obj\Debug\Models.pdb
